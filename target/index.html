@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Pixel Target Page</title>
+  </head>
+  <body>
+    <h3>
+      This is a static page, that embeds "pixel.js".
+    </h3>
+
+    <ul id="consoleLog"></ul>
+    <script
+      type="application/javascript"
+      src="//cdn.rawgit.com/Alorel/console-log-html/master/console-log-html.min.js"
+    ></script>
+    <script>
+      ConsoleLogHTML.connect(document.getElementById("consoleLog")); // Redirect log messages
+    </script>
+
+  </body>
+</html>
